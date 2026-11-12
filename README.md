@@ -1,129 +1,126 @@
-# WEEK 2 – CYBERSECURITY & ETHICAL HACKING INTERNSHIP REPORT
+# WEEK 2 – CYBERSECURITY & ETHICAL HACKING INTERNSHIP
 
-## 1. Student Information
+## 1. Student Details
 
-- **Student Name:** Sanchita Hitesh Gandhi
+- **Name:** Sanchita Hitesh Gandhi
 - **Course:** B.Sc. Cyber Security – Third Year
 - **College:** MES Abasaheb Garware College
-- **Internship Organization:** Networkwalks
-- **Project Week:** Week 2
+- **Internship:** Networkwalks
 - **Academic Year:** 2026–2027
+- **Project:** Week 2
 
 ## 2. Introduction
 
-This report presents the practical activities completed during Week 2 of the Cybersecurity and Ethical Hacking Internship at Networkwalks.
+This report documents the practical activities completed during Week 2 of my Cybersecurity and Ethical Hacking Internship.
 
-The main focus of these activities was footprinting, information gathering, reconnaissance and network scanning. Different cybersecurity tools were used to understand how information about domains, websites and network devices can be collected and analysed.
+The activities focused on footprinting, reconnaissance, information gathering and network scanning using different cybersecurity tools.
 
 ## 3. Objectives
 
-- To understand the fundamentals of footprinting and reconnaissance.
-- To practise information gathering using cybersecurity tools.
-- To identify website technologies and security mechanisms.
-- To perform domain-based information gathering.
-- To scan a network and identify active hosts.
-- To document practical observations and results.
+- Understand the basics of footprinting and reconnaissance.
+- Practise information gathering using cybersecurity tools.
+- Identify website technologies and DNS information.
+- Perform domain-based information gathering.
+- Identify active hosts through network scanning.
+- Understand network topology.
 
-## 4. Tools and Technologies Used
+## 4. Tools Used
 
 | Tool | Purpose |
 |---|---|
 | WHOIS | Domain registration information |
 | WhatWeb | Website technology identification |
-| Nslookup | DNS information gathering |
-| cURL | HTTP response and header analysis |
-| Wafw00f | Web Application Firewall detection |
+| Nslookup | DNS lookup |
+| cURL | HTTP response headers |
+| Wafw00f | WAF detection |
 | DNSRecon | DNS reconnaissance |
-| theHarvester | Email and subdomain information gathering |
-| Zenmap | Network scanning and host discovery |
+| theHarvester | Email and subdomain gathering |
+| Zenmap | Network scanning |
 
-## 5. Practical Modules Completed
+## 5. Practical Modules
 
-### PM1 – Footprinting with Multiple Tools
+### PM1 – Footprinting with Multiple Kali Linux Tools
 
-**Target Domain:** networkwalks.com
+**Target:** networkwalks.com
 
-Footprinting was performed using six tools in Kali Linux.
+Six tools were used:
 
-The following activities were completed:
-
-1. WHOIS – Collected domain registration details.
-2. WhatWeb – Identified website technologies and server information.
-3. Nslookup – Performed DNS lookup.
+1. WHOIS – Collected domain registration information.
+2. WhatWeb – Identified website technologies, including Apache and WordPress.
+3. Nslookup – Performed domain name resolution.
 4. cURL – Examined HTTP response headers.
-5. Wafw00f – Checked for Web Application Firewall detection.
-6. DNSRecon – Performed DNS reconnaissance.
+5. Wafw00f – Detected ModSecurity (SpiderLabs) as the Web Application Firewall.
+6. DNSRecon – Performed DNS record enumeration.
 
-**Observations:**
+**Observation:** The website redirected HTTP requests to HTTPS. WhatWeb reported an HTTP 200 OK response for HTTPS.
 
-- WHOIS provided domain registration information.
-- WhatWeb identified Apache and WordPress-related technologies.
-- The website redirected HTTP requests to HTTPS.
-- The HTTPS request returned a 200 OK response.
-- Wafw00f detected ModSecurity (SpiderLabs) protection.
+**Evidence:** [View PM1 screenshots and outputs](PM1-Footprinting/)
 
-The complete command outputs and screenshots are available in the PM1-Footprinting folder.
+### PM4 – Footprinting Using theHarvester
 
-### PM4 – Information Gathering Using theHarvester
-
-**Target Domain:** microsoft.com
-
-The theHarvester tool was used to practise domain-based information gathering.
+**Target:** microsoft.com
 
 Two tasks were performed:
 
-1. Information gathering using the Baidu source.
-2. Information gathering using all available sources.
+1. Information gathering using the Baidu source with a result limit of 1000.
+2. Information gathering using all available sources with a result limit of 50.
 
-The activity provided practical exposure to collecting publicly available domain-related information.
+The activity provided practical experience in domain-based information gathering and reconnaissance.
 
-The screenshots and command outputs are available in the PM4-theHarvester folder.
+**Evidence:** [View PM4 screenshots and outputs](PM4-theHarvester/)
 
 ### PM5 – Network Scanning Using Zenmap
 
-**Tool:** Zenmap (Nmap GUI)
-
+**Tool:** Zenmap (Nmap GUI)  
+**Operating System:** Windows  
 **Target Network:** 192.168.56.0/24
 
-Network scanning was performed using Zenmap to identify active hosts in the selected network.
+The following seven tasks were included in the practical:
+
+1. Downloaded and installed Zenmap.
+2. Checked local IP address and subnet using ipconfig.
+3. Performed a Ping Scan to identify live hosts.
+4. Identified the number of live hosts.
+5. Examined the IP addresses of live hosts.
+6. Examined the MAC addresses of live hosts.
+7. Generated network topology and saved the output in PDF format.
 
 **Scan Results:**
 
+- Scan profile: Ping Scan
 - Total IP addresses scanned: 256
-- Live hosts identified: 1
-- Scan type: Ping Scan
+- Live hosts detected: 1
 
-The scan results were examined using Zenmap. Network topology visualization was also performed as part of the practical activity.
+The scan helped me understand host discovery and network visualization.
 
-The screenshots and topology evidence are available in the PM5-Zenmap folder.
+**Evidence:** [View PM5 screenshots and topology files](PM5-Zenmap/)
 
 ## 6. Learning Outcomes
 
-Through these practical activities, I gained knowledge of:
-
-- Domain footprinting and reconnaissance.
-- Using different tools for information gathering.
-- Identifying website technologies and server details.
-- Understanding DNS lookup and DNS reconnaissance.
-- Detecting Web Application Firewall protection.
-- Using theHarvester for domain information gathering.
-- Performing network scanning using Zenmap.
-- Analysing and documenting scan results.
+- Learned domain footprinting and reconnaissance techniques.
+- Practised using six Kali Linux tools.
+- Understood website technology identification.
+- Gained experience with theHarvester.
+- Learned to perform network scanning using Zenmap.
+- Understood how to identify live hosts.
+- Learned to document practical findings and evidence.
 
 ## 7. Conclusion
 
-The Week 2 internship activities provided practical exposure to important cybersecurity and ethical hacking tools. By completing the footprinting, information-gathering and network-scanning tasks, I developed a better understanding of reconnaissance techniques and their applications in cybersecurity.
+The Week 2 internship activities provided practical exposure to important cybersecurity tools and techniques. These tasks improved my understanding of footprinting, information gathering, reconnaissance and network scanning.
 
-These activities helped improve my technical knowledge and practical understanding of security assessment processes.
+The practical exercises also helped me improve my technical knowledge and confidence in using cybersecurity tools.
 
 ## 8. Project Evidence
 
-The practical screenshots and output files are organised in the following folders:
+All practical screenshots and text outputs are organised into separate folders:
 
-- **PM1-Footprinting:** Screenshots and text outputs of six footprinting tools.
-- **PM4-theHarvester:** Screenshots and text outputs of both information-gathering tasks.
-- **PM5-Zenmap:** Network scan screenshots and topology evidence.
+- PM1-Footprinting
+- PM4-theHarvester
+- PM5-Zenmap
+
+The folders contain the supporting evidence for the completed activities.
 
 ## 9. Ethical Considerations
 
-All activities were performed for educational purposes as part of the internship. Information gathering and scanning should only be conducted on systems and networks where proper authorization is available.
+All activities were performed for educational purposes as part of the internship. Network scanning and security testing should only be conducted on systems and networks where proper authorization is available.
