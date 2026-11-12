@@ -1,0 +1,17 @@
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ nslookup networkwalks.com
+Server:         10.51.83.68
+Address:        10.51.83.68#53
+
+Non-authoritative answer:
+Name:   networkwalks.com
+Address: 192.232.216.135
+
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~]
+└─$ 
+
+
+
+
